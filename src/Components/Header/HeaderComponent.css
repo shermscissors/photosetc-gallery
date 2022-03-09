@@ -40,15 +40,10 @@
 
 /* Animations */
 
-@keyframes image-in {
-	0% {
-		background-image: url('/public/assets/DSCF0095.jpg');
+/* Mobile Stlying */
+
+@media (max-width: 500px) {
+	#masthead-h1 {
+		font-size: 200%;
 	}
-	50% {
-		background-image: url('/public/assets/456373006516-R1-035-16.jpg');
-	}
-	100% {
-		background-image: url('/public/assets/clouds.jpg');
-	}
-	
 }
