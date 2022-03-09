@@ -6,30 +6,27 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: flex-start;
-	height: 95vh;
-	background-color: rgb(250, 250, 250);
 	/* Load in animation */
 	animation: load-in 1000ms ease-in-out alternate;
 }
 
 /* CSS for Grids */
-.grid-template {
-	/* Black and white until hovered over */
-	filter: grayscale(1);
-	/* Vertical Layout */
-	grid-template-columns: 1fr;
-	/* Horizontal Layout */
-	grid-template-rows: 0.1fr 1fr;
-	margin: 0;
-	/* Fill entire page */
-	width: 100%;
-	transition: filter 500ms ease-in-out;
-}
-
-.grid-template:hover {
-	filter: grayscale(0);
+.gallery-container {
+	display: flex;
+	flex-flow: column ;
+	flex-wrap: no-wrap;
+	flex-shrink: 3;
+	flex-basis: 2rem;
+	gap: 10px;
+	align-content: stretch;
+	
 }
 
 /* ID Specific CSS */
 
 /* Animations */
+
+img {
+	max-width: 100%;
+	height: auto;
+}
