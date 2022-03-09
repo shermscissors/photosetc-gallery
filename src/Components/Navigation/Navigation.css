@@ -1,0 +1,25 @@
+/* Main Components */
+
+nav {
+	display: inline;
+	background-color: rgb(248, 88, 88);
+	grid-row: 2;
+	padding: 1% 0;
+	width: 100%;
+	justify-content: center;
+	align-content: center;
+	/* Dividing line between body containers and nav bar */
+	border-bottom: 3px solid black;
+}
+
+/* Class Specific CSS */
+
+.navigation-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-self: center;
+    list-style: none;
+	animation-name: fade-in;
+	animation-duration: 3000ms;
+}

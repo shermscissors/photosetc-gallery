@@ -1,0 +1,192 @@
+/* Main Components */
+
+* {
+	align-content: center;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+html {
+	height: 90%;
+}
+
+footer {
+	background-color: rgb(231, 231, 231);
+	grid-row: 4;
+	width: 100%;
+	padding: 2% 0;
+}
+
+/* Text + Etc. */
+p {
+	/* Gives a bit of room on sides of the container... Easier to read */
+	margin: 0 5%;
+	color: rgb(109, 109, 109);
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 700;
+}
+
+a {
+	/* Gets rid of underlines on links */
+	text-decoration: none;
+}
+
+h1 {
+	color: rgb(75, 75, 75);
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 30px;
+	margin: 2% 0;
+	padding: 0;
+	display: flex;
+	align-self: center;
+	justify-items: center;
+}
+
+h2 {
+	margin: 2% 0;
+	padding: 0;
+	display: flex;
+	align-self: center;
+	justify-items: center;
+}
+
+h6 {
+	display: flex;
+	justify-self: right;
+	align-self: right;
+	color: rgb(91, 180, 209);
+	transition: 500ms;
+}
+
+h6:hover {
+	color: rgb(79, 156, 182);
+}
+
+button {
+	border: 2px solid rgb(253, 253, 253);
+	background-color: transparent;
+	border-radius: 50px;
+	padding: 15px 30px;
+	color: white;
+	font-family: 'Courier New', Courier, monospace;
+	/* font-size: 30px; */
+	font-weight: 500;
+	transition: all 500ms ease-in-out;
+}
+
+button:hover {
+	border: 2px solid rgb(248, 130, 130);
+	cursor: pointer;
+}
+
+a {
+	color: white;
+	transition: color 500ms ease-in-out;
+
+}
+
+a:hover {
+	color: rgb(65, 65, 65);
+	
+}
+
+li {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 22px;
+	text-transform:uppercase;
+    padding: 0 10px;
+}
+
+/* Class Specific CSS */
+
+/* Main App.js CSS : Just defines the grid of the website */
+.App {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1.4fr 0.1fr 1fr 0.2fr;
+}
+
+/* All the main DIVs */
+.containers {
+	/* Main class for all my components. Aligns things to the center for visual pleasure */
+	justify-self: center;
+	align-self: center;
+	padding: 2% 0;
+}
+
+
+.body-container {
+	background-color: rgb(248, 248, 248);
+	/* Make it take the entire width of the page */
+	width: 100%;
+	
+}
+
+/* CSS for Grids */
+.grid-template {
+	/* Black and white until hovered over */
+	filter: grayscale(1);
+	/* Vertical Layout */
+	grid-template-columns: 1fr;
+	/* Horizontal Layout */
+	grid-template-rows: 0.1fr 1fr;
+	margin: 0;
+	/* Fill entire page */
+	width: 100%;
+	transition: filter 500ms ease-in-out;
+}
+
+.grid-template:hover {
+	filter: grayscale(0);
+}
+
+/* Displays additional info + Link on whatever image it's wrapped in */
+.lower-third {
+	opacity: 0;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-items: flex-end;
+	align-items: center;
+	background-color: rgb(100, 179, 231);
+	width: 100%;
+	height: 100%;
+	color: rgb(255, 255, 255);
+}
+
+.lower-third:hover {
+	/* Animation still a bit buggy, will fix eventually? */
+	animation-name: slide-in;
+	animation-duration: 500ms;
+	animation-fill-mode: forwards;
+}
+
+/* ID Specific CSS */
+
+#footer-heading {
+	/* align-items: flex-start; */
+	margin-bottom: 1%;
+	margin-top: 0;
+	color: rgb(134, 134, 134);
+}
+
+/* Animations */
+
+@keyframes slide-in {
+	0% {
+		opacity: 0;
+		height: 0;
+	}
+	100% {
+		opacity: 1;
+		height: 100%;
+	}
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: .9;
+	}
+}
