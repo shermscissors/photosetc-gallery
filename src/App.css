@@ -25,9 +25,9 @@ header {
 	align-items: center;
 	justify-content: center;
 	/* Takes entire height of browser regardless of device */
-	height: 99vh;
+	height: 100vh;
 	/* Slow transition of images on main page */
-	animation: image-in 45000ms infinite alternate;
+	animation: image-in 30000ms linear infinite alternate, load-in 1000ms ease-in-out alternate;
 }
 
 nav {
@@ -40,6 +40,7 @@ nav {
 	bottom: 0;
 	/* Dividing line between body containers and nav bar */
 	border-top: 3px solid black;
+	animation: navigation-grow 2000ms linear normal;
 }
 
 
@@ -144,6 +145,18 @@ li {
 
 /* Animations */
 
+@keyframes image-in {
+	0% {
+		background-image: url('/public/assets/DSCF0095.jpg');
+	}
+	50% {
+		background-image: url('/public/assets/456373006516-R1-035-16.jpg');
+	}
+	100% {
+		background-image: url('/public/assets/clouds.jpg');
+	}
+}
+
 @keyframes slide-in {
 	0% {
 		opacity: 0;
@@ -162,4 +175,30 @@ li {
 	100% {
 		opacity: .9;
 	}
+}
+
+@keyframes load-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes navigation-grow {
+	0% {
+		bottom: -100px;
+		opacity: 0;
+	}
+	100% {
+		bottom: 0;
+		opacity: 1;
+	}
+}
+
+/* Mobile Stlying */
+
+@media (max-width: 500px) {
+	
 }

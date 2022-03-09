@@ -1,5 +1,17 @@
 /* Class Specific CSS */
 
+.body-container {
+	/* Center Everything */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	height: 95vh;
+	background-color: rgb(250, 250, 250);
+	/* Load in animation */
+	animation: load-in 1000ms ease-in-out alternate;
+}
+
 /* CSS for Grids */
 .grid-template {
 	/* Black and white until hovered over */
