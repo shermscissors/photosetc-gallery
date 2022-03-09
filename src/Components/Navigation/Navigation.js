@@ -13,10 +13,7 @@ function Navigation(props) {
 					<Link to='../'>Home</Link>
 				</li>
 				<li>
-					<Link to='../About'>About</Link>
-				</li>
-				<li>
-					<Link to='../Blog'>Blog</Link>
+					<Link to='../Gallery'>Gallery</Link>
 				</li>
 			</ul>
 		</div>

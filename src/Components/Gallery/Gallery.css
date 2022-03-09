@@ -1,0 +1,23 @@
+/* Class Specific CSS */
+
+/* CSS for Grids */
+.grid-template {
+	/* Black and white until hovered over */
+	filter: grayscale(1);
+	/* Vertical Layout */
+	grid-template-columns: 1fr;
+	/* Horizontal Layout */
+	grid-template-rows: 0.1fr 1fr;
+	margin: 0;
+	/* Fill entire page */
+	width: 100%;
+	transition: filter 500ms ease-in-out;
+}
+
+.grid-template:hover {
+	filter: grayscale(0);
+}
+
+/* ID Specific CSS */
+
+/* Animations */

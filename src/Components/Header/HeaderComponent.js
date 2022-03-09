@@ -6,20 +6,20 @@ import React from 'react';
 
 function HeaderCompnent(props) {
 	return (
-		<div className='masthead'>
-			<h1 className='headings' id='masthead-h1'>
-				Minimalist Portfolio Template
-			</h1>
-
-			<button id='masthead-button'>
-				<a id='button-text'
-					href='https://en.wikipedia.org/wiki/Mellon_Collie_and_the_Infinite_Sadness'
+		<header>
+			<div className='masthead'>
+				<h1 className='headings' id='masthead-h1'>
+					photos, etc.
+				</h1>
+				<a
+					id='button-text'
+					href='https://discord.gg/tPMbHYDfVd'
 					target={'_blank'}
 					rel='noreferrer'>
-					Take Me Somewhere Better
+					<button id='masthead-button'>Take Me Somewhere Better</button>
 				</a>
-			</button>
-		</div>
+			</div>
+		</header>
 	);
 }
 
