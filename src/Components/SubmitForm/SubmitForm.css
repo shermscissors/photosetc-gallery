@@ -23,7 +23,7 @@ input[type='file'] {
 	flex-wrap: nowrap;
 	align-content: center;
 	justify-content: center;
-	height: 80vh;
+	height: 70vh;
 	margin: 2% 10%;
 }
 
@@ -62,3 +62,11 @@ input[type='file'] {
 }
 
 /* Animations */
+
+/* Mobile Stlying */
+
+@media (max-width: 500px) {
+	.submit-container  {
+		height: 50vh;
+	}
+}
