@@ -1,6 +1,6 @@
 /* Class Specific CSS */
 
-.masthead{
+.masthead {
 	display: flex;
 	flex-direction: column;
 	justify-items: center;
@@ -45,5 +45,9 @@
 @media (max-width: 500px) {
 	#masthead-h1 {
 		font-size: 200%;
+	}
+	#masthead-button {
+		font-size: 12px;
+		padding: 12px 10px;
 	}
 }

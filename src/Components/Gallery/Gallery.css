@@ -19,11 +19,12 @@
 	display: flex;
 	flex-flow: row wrap;
 	flex-basis: auto;
-	gap: 10px;
+	gap: 15px;
 	/*  */
 	align-content: flex-end;
 	justify-content: center;
 	margin: 10px 10px;
+	max-height: 100vh;
 }
 
 /* ID Specific CSS */
@@ -31,7 +32,3 @@
 
 
 /* Animations */
-
-img {
-	max-width: 32%;
-}

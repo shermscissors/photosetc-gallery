@@ -10,7 +10,7 @@ function SubmitForm(props) {
 		<div className='body-container'>
 			<article className='page-header'>
 				<h1 className='page-heading'>Post Image</h1>
-				<Link to={'../Gallery'}>
+				<Link to={'../gallery'}>
 					<button className='page-button'>Go Back</button>
 				</Link>
 			</article>

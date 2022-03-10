@@ -13,7 +13,7 @@ function Navigation(props) {
 					<Link to='/'>Home</Link>
 				</li>
 				<li>
-					<Link to='/Gallery'>Gallery</Link>
+					<Link to='/gallery'>Gallery</Link>
 				</li>
 			</ul>
 		</div>
