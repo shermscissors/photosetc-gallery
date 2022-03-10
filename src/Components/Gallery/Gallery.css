@@ -1,5 +1,6 @@
 /* Class Specific CSS */
 
+/* Entire Page */
 .body-container {
 	/* Center Everything */
 	display: flex;
@@ -10,23 +11,27 @@
 	animation: load-in 1000ms ease-in-out alternate;
 }
 
-/* CSS for Grids */
+/* Header */
+
+/* CSS for Gallery */
 .gallery-container {
+	/* Flex Stuff */
 	display: flex;
-	flex-flow: column ;
-	flex-wrap: no-wrap;
-	flex-shrink: 3;
-	flex-basis: 2rem;
+	flex-flow: row wrap;
+	flex-basis: auto;
 	gap: 10px;
-	align-content: stretch;
-	
+	/*  */
+	align-content: flex-end;
+	justify-content: center;
+	margin: 10px 10px;
 }
 
 /* ID Specific CSS */
 
+
+
 /* Animations */
 
 img {
-	max-width: 100%;
-	height: auto;
+	max-width: 32%;
 }

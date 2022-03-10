@@ -10,10 +10,10 @@ function Navigation(props) {
 		<div>
 			<ul className='navigation-list'>
 				<li>
-					<Link to='../'>Home</Link>
+					<Link to='/'>Home</Link>
 				</li>
 				<li>
-					<Link to='../Gallery'>Gallery</Link>
+					<Link to='/Gallery'>Gallery</Link>
 				</li>
 			</ul>
 		</div>
