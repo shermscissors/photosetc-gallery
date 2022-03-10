@@ -4,13 +4,11 @@ html {
 	height: 100%;
 }
 
-
 body {
 	align-content: center;
 	justify-content: center;
 	margin: 0 auto;
 }
-
 
 header {
 	/* Background : Centered with room for items in the center */
@@ -57,6 +55,7 @@ h1 {
 	color: rgb(75, 75, 75);
 	font-family: 'Courier New', Courier, monospace;
 	font-size: 30px;
+	text-transform: lowercase;
 	margin: 2% 0;
 	padding: 0;
 	display: flex;
@@ -118,7 +117,36 @@ li {
 	padding: 2% 0;
 }
 
+.page-header {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-direction: row;
+	width: 96vw;
+	padding: 10px;
+}
 
+.page-heading {
+	text-transform: lowercase;
+	margin: .5% 1%;
+}
+
+.page-button {
+	text-transform: lowercase;
+	justify-self: flex-end;
+	color: white;
+	background-color: rgb(140, 226, 255);
+	border: 0;
+	border-radius: 100px;
+	padding: 20px 30px;
+	margin: 5% 0;
+	transition: background-color 500ms ease-in-out;
+}
+
+.page-button:hover {
+	background-color: rgb(121, 200, 226);
+	cursor: pointer;
+}
 
 /* Displays additional info + Link on whatever image it's wrapped in */
 .lower-third {
