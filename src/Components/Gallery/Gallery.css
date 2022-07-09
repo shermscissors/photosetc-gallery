@@ -27,6 +27,10 @@
 	max-height: 100vh;
 }
 
+li {
+	list-style-type: none;
+}
+
 /* ID Specific CSS */
 
 
