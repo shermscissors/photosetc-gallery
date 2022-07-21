@@ -2,10 +2,43 @@
 import './SubmitForm.css';
 
 // External Stuff
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, {useState} from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+
 
 function SubmitForm(props) {
+	const navigate = useNavigate();
+	const [newPhoto, setNewPhoto] = useState({
+		image: '',
+		owner: '',
+		description: '',
+	});
+
+	const handleChange = (event) => {
+		setNewPhoto({ ...newPhoto, [event.target.id]: event.target.value });
+	};
+
+	const createNewPhoto = () => {
+		fetch('https://photosetc-backend.herokuapp.com/api/photos', {
+			method: 'POST',
+			body: JSON.stringify(newPhoto),
+			headers: {
+				'Content-Type': 'application/json',
+			},
+		})
+		.then((res) => {
+			return res.json();
+		})
+		.then((res) => {
+			navigate('/gallery');
+		});
+	};
+
+	const handleSubmit = (event) => {
+		event.preventDefault();
+		createNewPhoto();
+	};
+
 	return (
 		<div className='body-container'>
 			<article className='page-header'>
